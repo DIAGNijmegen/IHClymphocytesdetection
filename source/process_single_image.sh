@@ -49,7 +49,7 @@ echo "Apply segmentation network..."
 # --quantize
 
 python3.7 /home/user/source/pathology-fast-inference/scripts/applynetwork_multiproc.py \
---model_path="/home/user/models/model19.pt" \
+--model_path="/home/user/models/lymphocyte_fcn.net" \
 --input_wsi_path="${image_to_process}" \
 --output_wsi_path="/home/user/data/tmp_output/{image}.tif" \
 --tile_size=1024 \
